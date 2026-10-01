@@ -1,50 +1,39 @@
 [
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "68 kg",
-      "goal": "Marathon training preparation with high carbohydrate intake for endurance and recovery",
-      "restrictions": "Vegetarian, no nuts"
+      "content": "Recent advances in synthetic biology have enabled the development of engineered microorganisms capable of producing high-value biochemicals, reducing production costs by 40% compared to traditional chemical synthesis methods. Simultaneously, blockchain-based supply chain technologies are revolutionizing the tracking and authentication of biopharmaceutical products, while machine learning algorithms optimize fermentation parameters in real-time, improving yield efficiency. The convergence of computational genomics, biotechnology, and distributed ledger systems represents a significant opportunity for sustainable manufacturing, though regulatory frameworks governing genetically modified organisms in industrial applications remain fragmented across jurisdictions."
     },
     "solution_criteria": [
-      "Meal plan includes at least 3 meals strategically timed around training windows",
-      "Daily caloric intake and macronutrient distribution (carbs emphasis) are appropriate for marathon training",
-      "All meals respect dietary restrictions (vegetarian, nut-free)",
-      "Format is compact and concise (1 day only)"
+      "Extracts all major topics spanning biology, technology, and economics domains",
+      "Presents topics as a JSON array of strings",
+      "Captures both explicit topics (synthetic biology, blockchain) and implicit ones (regulatory frameworks, sustainability)"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring calorie-dense, carbohydrate-heavy meals with specific timing around training windows"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a multidisciplinary passage containing mixed topics from biology, economics, and technology to verify accurate extraction of diverse subject areas"
   },
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "68 kg",
-      "goal": "Endurance performance for 120km cycling event",
-      "restrictions": "Vegan (no animal products)"
+      "content": "Machine learning algorithms have revolutionized natural language processing through deep neural networks and transformer architectures. These transformer models, particularly BERT and GPT variants, leverage attention mechanisms to capture linguistic patterns and semantic relationships in text. Recent advances in large language models demonstrate impressive capabilities in language understanding and generation tasks, while also raising important questions about model interpretability, computational efficiency, and the environmental impact of training such massive neural network systems. Furthermore, the application of these NLP techniques to information extraction and sentiment analysis continues to expand across industries, though concerns about algorithmic bias and fairness in language models remain critical research priorities."
     },
     "solution_criteria": [
-      "Meal plan contains only vegan foods and beverages",
-      "Provides adequate protein (minimum 1.6g per kg body weight) from plant-based sources",
-      "Includes carbohydrate-rich meals for endurance cycling fuel",
-      "All meals are practical to prepare and consume in a single day"
+      "Extracts all distinct main topics without significant duplication (e.g., 'machine learning', 'transformer models', 'language models' should be treated as related but separate topics if presented distinctly)",
+      "Avoids redundant topics while correctly identifying when overlapping concepts are presented as separate discussion points",
+      "Returns output as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with an athlete with dietary restrictions (vegan endurance cyclist) to verify the meal plan accommodates nutritional constraints while meeting athletic performance needs"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a short passage containing overlapping or related topics to evaluate how the prompt handles topic deduplication and topic boundary distinctions"
   },
   {
     "prompt_inputs": {
-      "height": "180",
-      "weight": "90",
-      "goal": "Muscle recovery and strength performance optimization",
-      "restrictions": "None"
+      "content": "Hegel's dialectical method posits that consciousness emerges through a process of negation and sublation, wherein the subject and object are not pre-given categories but rather constitute themselves through their mutual contradiction and reconciliation. This framework troubles the Cartesian epistemological tradition by dissolving the subject-object dualism at the heart of representationalist theories of knowledge. The phenomenological reduction, as later developed by Husserl, attempts to bracket ontological assumptions and access the intentional structures of consciousness itself, yet Heidegger's fundamental ontology argues that such reduction remains trapped within metaphysical presuppositions about Being. These competing approaches to transcendental idealism reveal an underlying tension between the desire for epistemic foundationalism and the recognition that all knowledge is always already situated within historical and linguistic horizons that precede individual consciousness."
     },
     "solution_criteria": [
-      "Meal plan covers exactly 1 day with 4-5 distinct meals/snacks",
-      "Minimum 1.8g protein per kg body weight (162g total) distributed across meals",
-      "Includes micronutrients supporting muscle recovery (iron, magnesium, zinc, B vitamins)",
-      "Compact format with concise descriptions (no lengthy recipes or explanations)"
+      "Identifies explicit philosophical concepts and methodologies (e.g., dialectical method, phenomenological reduction, fundamental ontology)",
+      "Recognizes implicit abstract themes beyond surface keywords (e.g., subject-object relations, epistemological foundations, historical contingency of knowledge)",
+      "Distinguishes between specific thinkers' positions and broader theoretical frameworks they address",
+      "Captures the central tension or problem structure underlying the passage"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-optimized meals with micronutrient balance for muscle recovery and performance"
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a dense philosophical or theoretical passage containing implicit and abstract topics to assess whether the prompt can identify nuanced conceptual themes beyond explicit keywords"
   }
 ]
