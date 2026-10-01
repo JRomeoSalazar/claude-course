@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training preparation with high carbohydrate intake for endurance and recovery",
+      "restrictions": "Vegetarian, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan includes at least 3 meals strategically timed around training windows",
+      "Daily caloric intake and macronutrient distribution (carbs emphasis) are appropriate for marathon training",
+      "All meals respect dietary restrictions (vegetarian, nut-free)",
+      "Format is compact and concise (1 day only)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring calorie-dense, carbohydrate-heavy meals with specific timing around training windows"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Endurance performance for 120km cycling event",
+      "restrictions": "Vegan (no animal products)"
+    },
+    "solution_criteria": [
+      "Meal plan contains only vegan foods and beverages",
+      "Provides adequate protein (minimum 1.6g per kg body weight) from plant-based sources",
+      "Includes carbohydrate-rich meals for endurance cycling fuel",
+      "All meals are practical to prepare and consume in a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegan endurance cyclist) to verify the meal plan accommodates nutritional constraints while meeting athletic performance needs"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "90",
+      "goal": "Muscle recovery and strength performance optimization",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers exactly 1 day with 4-5 distinct meals/snacks",
+      "Minimum 1.8g protein per kg body weight (162g total) distributed across meals",
+      "Includes micronutrients supporting muscle recovery (iron, magnesium, zinc, B vitamins)",
+      "Compact format with concise descriptions (no lengthy recipes or explanations)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-optimized meals with micronutrient balance for muscle recovery and performance"
+  }
+]
