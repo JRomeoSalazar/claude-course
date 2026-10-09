@@ -1,0 +1,160 @@
+====================================================================================================
+STREAMING SERVICE CHURN ANALYSIS - EXECUTIVE SUMMARY
+====================================================================================================
+
+OVERALL CHURN STATISTICS
+----------------------------------------------------------------------------------------------------
+Total Customers Analyzed: 500
+Churned Customers: 193 (38.6%)
+Retained Customers: 307 (61.4%)
+
+====================================================================================================
+MAJOR CHURN DRIVERS (Ranked by Importance)
+====================================================================================================
+
+DRIVER #1: TOTAL VIEWING HOURS
+  Feature Importance Score: 0.2498
+  Statistical Significance: p-value <0.001
+  Churned Customers Average: 66.58
+  Retained Customers Average: 83.22
+  Difference: -16.64 (-20.0%)
+  Key Insight: Churned customers watch 20% fewer hours. This is the strongest predictor.
+
+DRIVER #2: AVERAGE SESSION DURATION
+  Feature Importance Score: 0.1925
+  Statistical Significance: p-value <0.001
+  Churned Customers Average: 49.42
+  Retained Customers Average: 57.76
+  Difference: -8.34 (-14.4%)
+  Key Insight: Churned users have 14% shorter sessions, suggesting lower engagement per session.
+
+DRIVER #3: NUMBER OF UNIQUE TITLES
+  Feature Importance Score: 0.1648
+  Statistical Significance: p-value <0.001
+  Churned Customers Average: 19.45
+  Retained Customers Average: 23.74
+  Difference: -4.29 (-18.1%)
+  Key Insight: Churned customers explore 18% fewer titles, indicating narrower content engagement.
+
+DRIVER #4: CUSTOMER SERVICE INTERACTIONS
+  Feature Importance Score: 0.1142
+  Statistical Significance: p-value <0.001
+  Churned Customers Average: 3.18
+  Retained Customers Average: 2.49
+  Difference: +0.69 (+27.7%)
+  Key Insight: Churned customers contact CS 28% MORE. High CS interactions predict dissatisfaction.
+
+DRIVER #5: BINGE WATCHING SESSIONS
+  Feature Importance Score: 0.1082
+  Statistical Significance: p-value <0.001
+  Churned Customers Average: 6.17
+  Retained Customers Average: 7.69
+  Difference: -1.52 (-19.8%)
+  Key Insight: Churned users have 20% fewer binge sessions, showing reduced immersion in content.
+
+====================================================================================================
+SUBSCRIPTION TIER ANALYSIS
+====================================================================================================
+
+Chi-square test: p-value = 0.0086 (Statistically Significant)
+
+Basic Tier:
+  Total Customers: 207
+  Churned: 90
+  Churn Rate: 43.5%
+
+Standard Tier:
+  Total Customers: 210
+  Churned: 83
+  Churn Rate: 39.5%
+
+Premium Tier:
+  Total Customers: 83
+  Churned: 20
+  Churn Rate: 24.1%
+
+Key Finding: Basic tier has the highest churn rate (43.5%), while Premium has
+             the lowest (24.1%). This suggests price-value perception issues.
+
+====================================================================================================
+CONTENT PREFERENCE (TOP GENRE) ANALYSIS
+====================================================================================================
+
+Chi-square test: p-value = 0.1185 (NOT Statistically Significant)
+
+High-Risk Genres (>45% churn):
+  • Horror: 52.3% churn (n=44)
+  • Thriller: 48.3% churn (n=29)
+
+Low-Risk Genres (<30% churn):
+  • Documentary: 25.9% churn (n=54)
+
+====================================================================================================
+HIGH-RISK CUSTOMER PROFILES
+====================================================================================================
+
+Profile 1: Low Engagement User
+  Criteria: <61 hours viewing AND <6 binge sessions
+  Population: 127 customers (25.4%)
+  Churn Rate: 50.4%
+  Risk Level: 1.3x higher than average
+
+Profile 2: Dissatisfied User (High Customer Service Contact)
+  Criteria: ≥3 customer service interactions
+  Population: 289 customers (57.8%)
+  Churn Rate: 48.8%
+  Risk Level: 1.3x higher than average
+
+Profile 3: Basic Tier with Low Usage
+  Criteria: Basic tier AND <61 hours viewing
+  Population: 80 customers (16.0%)
+  Churn Rate: 55.0%
+  Risk Level: 1.4x higher than average
+
+====================================================================================================
+STRATEGIC RECOMMENDATIONS
+====================================================================================================
+
+1. Engagement Intervention Program
+  • Target customers with <60 hours viewing/month for engagement campaigns
+  • Send personalized content recommendations to increase unique titles watched
+  • Implement 'continue watching' reminders to boost session frequency
+
+2. Customer Service Quality Improvement
+  • High CS interactions strongly predict churn - focus on first-contact resolution
+  • Proactively reach out to customers after 2+ CS interactions
+  • Implement satisfaction surveys after each CS interaction
+
+3. Subscription Tier Optimization
+  • Review Basic tier value proposition (43.5% churn rate is critical)
+  • Consider promotional upgrades for engaged Basic tier users
+  • Premium tier retention is strong (24%) - analyze what works there
+
+4. Content Strategy
+  • Monitor customers with Horror/Thriller preferences (highest churn)
+  • Expand content library in high-churn genres
+  • Promote diverse content discovery to increase unique titles viewed
+
+5. Early Warning System
+  • Flag customers showing: <50 hrs viewing, <5 binge sessions, >3 CS contacts
+  • Implement automated retention campaigns for at-risk segments
+  • Monthly churn risk scoring based on engagement metrics
+
+====================================================================================================
+CONCLUSION
+====================================================================================================
+
+The analysis reveals that churn is primarily driven by LOW ENGAGEMENT rather than
+demographics or content preferences. Churned customers consistently show:
+
+  • 20% fewer viewing hours
+  • 14% shorter average sessions
+  • 18% fewer unique titles explored
+  • 20% fewer binge-watching sessions
+  • 28% MORE customer service interactions
+
+These patterns suggest that addressing engagement and satisfaction issues early
+can significantly reduce churn. The combination of usage monitoring and proactive
+intervention represents the highest-impact retention strategy.
+
+====================================================================================================
